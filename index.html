@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerBackground">
+        <button class="background1" onclick="changeBg('1')"></button>
+        <button class="background2" onclick="changeBg('2')"></button>
+        <button class="background3" onclick="changeBg('3')"></button>
+        <button class="background4" onclick="changeBg('4')"></button>
+    </div>
+    <header>فهرست کار های روزانه</header>
+
+    <form>
+        <select class="filter">
+            <option value="all">همه</option>
+            <option value="completed">انجام شده</option>
+            <option value="uncompleted">انجام نشده</option>
+        </select>
+        <input type="text" class="inputTodo">
+        <button type="submit" class="btnSubmit"><i class="bi bi-plus-circle-dotted"></i></button>
+    </form>
+
+    <div class="container-todo">
+        <ul class="ulTodo"></ul>
+    </div>
+    <span>برای پاک کردن هر یک از ایتم های لیست کلیک راست کنید</span>
+    <script src="script.js"></script>
+</body>
+</html>

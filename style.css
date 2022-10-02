@@ -1,0 +1,168 @@
+@font-face {
+  font-family: iran;
+  src: url("./vazir-font-v16.1.0/Vazir.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "iran";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  background: #4776e6;
+  background: -webkit-linear-gradient(to bottom, #8e54e9, #4776e6);
+  background: linear-gradient(to bottom, #8e54e9, #4776e6);
+  
+  direction: rtl;
+}
+
+header {
+  height: 10vh;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputTodo,
+.btnSubmit {
+  font-size: 40px;
+  outline: 0;
+  border: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.inputTodo {
+  border-radius: 0 10px 10px 0;
+}
+
+.btnSubmit {
+  cursor: pointer;
+  color: rgb(250, 178, 43);
+  border-radius: 10px 0 0 10px;
+  transition: 0.3s all ease;
+}
+
+.btnSubmit:hover {
+  background-color: rgb(250, 178, 43);
+  color: #fff;
+}
+
+.filter {
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ulTodo {
+  list-style: none;
+}
+
+.todos {
+  background-color: #fff;
+  width: 30vw;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.todo .li {
+  font-size: 20px;
+}
+
+.btnList {
+  font-size: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: green;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.doneContainer {
+  background-color: rgb(221, 219, 219);
+}
+
+span {
+  color: #fff;
+}
+
+.containerBackground {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  display: flex;
+}
+
+.containerBackground > button {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.background1 {
+  background: #16222a; 
+  background: -webkit-linear-gradient(
+    to bottom,
+    #3a6073,
+    #16222a
+  ); 
+  background: linear-gradient(
+    to bottom,
+    #3a6073,
+    #16222a
+  ); 
+}
+
+.background2 {
+  background: #1D2B64;  
+  background: -webkit-linear-gradient(to bottom, #F8CDDA, #1D2B64);  
+  background: linear-gradient(to bottom, #F8CDDA, #1D2B64);
+  
+}
+.background3 {
+  background: #3CA55C; 
+  background: -webkit-linear-gradient(to bottom, #B5AC49, #3CA55C); 
+  background: linear-gradient(to bottom, #B5AC49, #3CA55C); 
+  
+}
+
+.background4 {
+  background: #DA22FF;  
+  background: -webkit-linear-gradient(to bottom, #9733EE, #DA22FF);  
+  background: linear-gradient(to bottom, #9733EE, #DA22FF);
+  
+}
